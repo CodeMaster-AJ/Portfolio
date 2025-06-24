@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ - AIML Developer & Former YouTuber | Portfolio</title>
+    <meta name="description" content="Amandeep Singh Jadhav (AJ) - AIML Developer, Former YouTuber with 650K+ subscribers. Showcasing my journey from content creation to tech innovation.">
+    <meta name="keywords" content="AJ, Amandeep Singh Jadhav, AIML Developer, YouTuber, Portfolio, Tech, AI, Machine Learning">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Floating Genie -->
+    <div class="floating-genie" id="floatingGenie">
+        <div class="genie-body">
+            <div class="genie-face">
+                <div class="genie-eyes">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+                <div class="genie-mouth"></div>
+            </div>
+            <div class="genie-trail"></div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particlesCanvas" class="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AJ</div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#timeline" class="nav-link">Journey</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">I AM AJ</h1>
+            <div class="hero-subtitle">
+                <span class="typewriter" id="typewriter">Developer. Dreamer. Doer.</span>
+            </div>
+            <p class="hero-description">
+                From <span class="highlight">650K+ YouTube subscribers</span> to AIML Developer. 
+                Building extraordinary digital experiences with passion and precision.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-code"></i> View Projects
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                    <i class="fas fa-user"></i> About Me
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Social Banner -->
+    <section class="social-banner">
+        <div class="container">
+            <div class="glass-card">
+                <h3 class="section-subtitle">Connect With Me</h3>
+                <div class="social-grid">
+                    <a href="https://youtube.com/" class="social-card youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                        <small>650K+ Subs</small>
+                    </a>
+                    <a href="https://instagram.com/" class="social-card instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                        <small>@aj_creates</small>
+                    </a>
+                    <a href="https://linkedin.com/" class="social-card linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <small>Professional</small>
+                    </a>
+                    <a href="https://github.com/" class="social-card github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <small>Code Portfolio</small>
+                    </a>
+                    <a href="https://twitter.com/" class="social-card twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                        <small>Tech Insights</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About AJ</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>Hey there! I'm <span class="highlight">Amandeep Singh Jadhav</span>, but everyone calls me AJ. My journey is a unique blend of creativity and technology, shaped by years of content creation and now focused on artificial intelligence and machine learning.</p>
+                    
+                    <p>With over <span class="highlight-green">650,000 subscribers</span> on YouTube, I've mastered the art of storytelling, visual design, and audience engagement. But life had different plans – my channel faced challenges, but I never gave up. Instead, I transformed that setback into a comeback.</p>
+                    
+                    <p>Currently pursuing AIML at <span class="highlight-purple">Akal University</span> (graduating 2028), I'm not just learning to code – I'm learning to innovate, to dream big, and to turn those dreams into reality. Every failure taught me resilience, every success taught me humility.</p>
+                    
+                    <div class="about-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-file-alt"></i> View Certificates
+                        </button>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Professional Photo</p>
+                        <small>Coming Soon</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>YouTube Success & Lessons</h3>
+                        <span class="timeline-period">2020-2023</span>
+                        <p>Built a thriving YouTube channel with 650K+ subscribers, mastering content creation and audience engagement. Faced challenges but learned resilience and the importance of adapting to change.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Content Creation</span>
+                            <span class="skill-tag">Video Editing</span>
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">Storytelling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon skills">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Skill Diversification</h3>
+                        <span class="timeline-period">2021-2024</span>
+                        <p>Expanded expertise across multiple domains - graphic design, SEO optimization, social media automation, and digital marketing. Built a versatile skill set for the digital age.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Social Media Marketing</span>
+                            <span class="skill-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon freelance">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Freelancing Success</h3>
+                        <span class="timeline-period">2022-Present</span>
+                        <p>Started offering freelance services in content creation, design, and digital marketing. Helped businesses grow their online presence while maintaining motivation despite previous setbacks.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Client Management</span>
+                            <span class="skill-tag">Project Delivery</span>
+                            <span class="skill-tag">Business Growth</span>
+                            <span class="skill-tag">Entrepreneurship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon tech">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>AIML Journey Begins</h3>
+                        <span class="timeline-period">2024-Present</span>
+                        <p>Enrolled in AIML program at Akal University, combining creative background with cutting-edge technology. Ready to build the future with artificial intelligence and machine learning.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">AI Innovation</span>
+                            <span class="skill-tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <!-- Freelancer Status -->
+            <div class="freelancer-status">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>Available for Freelance Projects</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon creative">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Graphic Design</span>
+                            <div class="skill-bar">
+                                <div
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Video Editing</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon development">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML/CSS/JS</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon marketing">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>SEO Optimization</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Social Media</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Content Strategy</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelance Services -->
+            <div class="services-section">
+                <h3 class="section-subtitle">Freelance Services</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-video"></i>
+                        <h4>Video Editing</h4>
+                        <p>Professional video editing and post-production</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>Graphic Design</h4>
+                        <p>Brand identity and visual design solutions</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-search"></i>
+                        <h4>SEO Services</h4>
+                        <p>Search engine optimization and analytics</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-share-alt"></i>
+                        <h4>Social Media</h4>
+                        <p>Content strategy and automation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon smart-home">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Home AI</h3>
+                        <p>Intelligent home automation system with ML-powered energy optimization and voice control integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon content-ai">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Content AI Studio</h3>
+                        <p>AI-powered video editing and content generation tool specifically designed for content creators.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">FFmpeg</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon portfolio">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio 3D</h3>
+                        <p>Interactive portfolio website with 3D animations, particle effects, and AI-powered chatbot.</p>
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">GSAP</span>
+                            <span class="tag">WebGL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon trend-predictor">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Trend Predictor</h3>
+                        <p>ML model that predicts viral content trends using social media data and engagement patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon creator-hub">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>CreatorHub App</h3>
+                        <p>Mobile app connecting content creators with brands and facilitating meaningful collaborations.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon ai-assistant">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Assistant</h3>
+                        <p>Intelligent chatbot for customer support and personalized content recommendations.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                            <button class="btn btn-sm btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Journey Highlights</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube Milestone</span>
+                </div>
+                <div class="gallery-item achievement">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievement</span>
+                </div>
+                <div class="gallery-item education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </div>
+                <div class="gallery-item collaboration">
+                    <i class="fas fa-handshake"></i>
+                    <span>Collaboration</span>
+                </div>
+                <div class="gallery-item coding">
+                    <i class="fas fa-code"></i>
+                    <span>First Code</span>
+                </div>
+                <div class="gallery-item launch">
+                    <i class="fas fa-rocket"></i>
+                    <span>Project Launch</span>
+                </div>
+                <div class="gallery-item community">
+                    <i class="fas fa-heart"></i>
+                    <span>Community Love</span>
+                </div>
+                <div class="gallery-item growth">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Growth</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Ready to build something extraordinary together? Let's turn ideas into reality.
+                </p>
+
+                <!-- WhatsApp CTA -->
+                <div class="whatsapp-cta">
+                    <a href="https://wa.me/919584220420?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services." class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Let's Chat on WhatsApp</span>
+                        <div class="whatsapp-pulse"></div>
+                    </a>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>aj@example.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+91 958 422 0420</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Punjab, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links">
+                        <h3>Quick Links</h3>
+                        <div class="links-grid">
+                            <a href="#" class="link-card linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="link-card github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="link-card youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="link-card instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">AJ</div>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amandeep Singh Jadhav. All rights reserved. | Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
